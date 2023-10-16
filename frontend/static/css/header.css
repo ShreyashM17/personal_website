@@ -1,0 +1,129 @@
+.navbar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Name{
+    padding-left: 40px;
+}
+.small{
+    display: none;
+}
+.navigation{
+    width: 50%;
+}
+.navigation ul{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;   
+    padding: 5px;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.navigation ul li a:hover{
+    transition: 0.2s;
+    color: #FB8122;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: #E1E2E2;
+}
+.copyright{
+    font-size: 10px;
+    position: relative;
+    top: 95%;
+}
+#nav-btn{
+    display: none;
+    position: fixed;
+}
+#close-btn{
+    display: none;
+}
+.mnavigation ul{
+    display: none;
+}
+@media screen and (max-width: 710px){
+    #nav-btn{
+        display: block;
+        right: 20px;
+        color: ghostwhite;
+        transition: 0.5s ease;
+    }
+    #close-btn{
+        display: none;
+        right: 20px;
+        color: ghostwhite;
+        transition: 0.5s ease;
+        position: absolute;
+        right: 10px;
+        top: 30px;
+    }
+    #nav-btn:hover{
+        color: #FB8122;
+    }
+    #close-btn:hover{
+        color: #FB8122;
+    }
+    .navbar{
+        justify-content: space-evenly;
+    }
+    .Name{
+        padding-left: 0px;
+    }
+    header{
+        height: 100%;
+    }
+    .active{
+        display: flex;
+        flex-direction: column !important;
+    }
+    .navigation ul{
+        display: none !important;
+    }
+    .mnavigation ul{
+        display: block !important;
+        position: relative;
+        width: 100%;
+        padding-left: 0px;
+        }
+    .mnavigation ul li{
+        height: 15px;
+        margin-bottom: 5px;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .mnavigation ul li:nth-child(1){
+        background: #00000040;
+    }
+    .mnavigation ul li:nth-child(3){
+        background: #00000040;
+    }
+    .small{
+        display: block;
+        text-align: center;
+    }
+    .big{
+        display: none;
+    }
+}

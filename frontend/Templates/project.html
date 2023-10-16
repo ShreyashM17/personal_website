@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shreyash Mogaveera | Project</title>
+        <link rel="icon" type="jpeg" href="{% static 'images/Shreyash.jpeg' %}" width="100%" height="100%">
+        <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+        <link rel="stylesheet" href="{% static 'css/header.css' %}">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar" id="navbar">
+                <div class="Name big">
+                    <h3>Shreyash Mogaveera</h3>
+                </div>
+                <i class="fa-solid fa-bars fa-2xl" onclick="menu()" id="nav-btn"></i>
+                <i class="fa-solid fa-xmark fa-2xl" onclick="cross()" id="close-btn"></i>
+                <div class="navigation" id="navigate">
+                    <div class="Name small">
+                        <h3>Shreyash Mogaveera</h3>
+                    </div>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/work">Work Experience</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="Projectlist">
+                    <h1 align="center">Following are the Websites Created by ME</h1>
+            <div class="container1">
+                <div class="project">
+                    <h1>MESA PCCOE</h1>
+                    <p>It is the official website of Mechanical Engineering Students Association of PCCOE, Pune</p>
+                    <a href="https://mesapccoe.org">Click here to visit</a>
+                </div>
+                <div class="project">
+                    <h1>Technophilia</h1>
+                    <p>It is the Flagship event conducted by Team MESA PCCOE in the year 2023</p>
+                    <a href="https://technophilia2023">Click here to visit</a>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="project">
+                    <h1>URL Shortner</h1>
+                    <p>It is an Url Shortner, in which you have to add a long url, it would return a shortned URL which would redirect to the same long url</p>
+                    <a href="/url_shortner">Click here to visit</a>
+                </div>
+                <div class="project">
+                    <h1>Todo List</h1>
+                    <p>In this Web Page you can add and delete list of tasks, which anyone can view through this web page</p>
+                    <a href="/todo_list">Click here to visit</a>
+                </div>
+                <div class="project">
+                    <h1>Dictionary</h1>
+                    <p>It is an English Dictionary which gives meaning of a word as well as shows an image refering the same</p>
+                    <a href="/dictionary">Click here to visit</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="copyright">Shreyash Mogaveera © 2023-All Rights Reserved</p>
+        </footer>
+    </body>
+    <script src="https://kit.fontawesome.com/510078e498.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/header.js' %}"></script>
+</html>

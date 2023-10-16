@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shreyash Mogaveera | Home Page</title>
+        <link rel="icon" type="jpeg" href="{% static 'images/Shreyash.jpeg' %}" width="100%" height="100%">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/header.css' %}">
+    </head>
+    <body><header>
+            <nav class="navbar" id="navbar">
+                <div class="Name big">
+                    <h3>Shreyash Mogaveera</h3>
+                </div>
+                <i class="fa-solid fa-bars fa-2xl" onclick="menu()" id="nav-btn"></i>
+                <i class="fa-solid fa-xmark fa-2xl" onclick="cross()" id="close-btn"></i>
+                <div class="navigation" id="navigate">
+                    <div class="Name small">
+                        <h3>Shreyash Mogaveera</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/work">Work Experience</a></li>
+                        <li><a href="/project">Projects</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="content">
+                <h2>Hi, I am Shreyash</h2>  
+                <p>I am a Mechanical Engineering student at PCCOE</p> 
+                <div class="social">
+                    <a href="https://www.instagram.com/shreyash_mogaveera/"><i class="fa-brands fa-instagram fa-bounce fa-2xl" style="color: #E1E2E2;"></i></a>
+                    <a href="https://www.facebook.com/shreyash.mogaveera.3/"><i class="fa-brands fa-facebook fa-bounce fa-2xl" style="color: #E1E2E2;"></i></a>
+                    <a href="https://www.linkedin.com/in/shreyash-mogaveera/"><i class="fa-brands fa-linkedin fa-bounce fa-2xl" style="color: #E1E2E2;"></i></a>
+                    <a href="mailto:shreyashmogaveera@gmail.com"><i class="fa-solid fa-envelope fa-bounce fa-2xl" style="color: #E1E2E2;"></i></a>
+                </div>
+            </div>
+            <div class="image-container">
+                <div class="imagebox">
+                    <img type="jpeg" src="{% static 'images/Shreyash.jpeg' %}">
+                </div>
+            </div>
+        </main>
+    <div id="about">
+        <h1>About Me</h1>
+    <p>I am enthusiast who is also eager to face find solution to a given problem. I have been developing website from quit a few time. I also have certification in AutoDesk Fusion 360. I have learnt many programming languages, such as python, C, C++, MATLAB, etc. I am profiencient at python. I have interest in quantum computing, I have been studying about from quit a while. You can contact me through my Social Media accounts</p>
+    </div>
+        <footer>
+            <p class="copyright">Shreyash Mogaveera © 2023-All Rights Reserved</p>
+        </footer>
+    </body>
+    <script src="https://kit.fontawesome.com/510078e498.js" crossorigin="anonymous"></script>
+    <script src="{% static 'js/header.js' %}"></script>
+</html>

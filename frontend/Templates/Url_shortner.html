@@ -1,0 +1,84 @@
+<head>
+    {% load static %}
+    <title>Url shortner</title>
+    <style>
+        body{
+        background-image: url("{% static 'images/xj.gif' %}");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        }
+        .size{
+            position: fixed;
+            left: 40%;
+            width: 550px;
+            height: 60px;
+            font-size: 20px;
+            color: blue;
+            background-color: white;
+        }
+        #box{
+            position: fixed;
+            top: 25%;
+            left: 20%;
+            width: 60%;
+            height: 50%;
+            background-color: crimson;
+            background-image: url("{% static 'xj.gif' %}");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        #linkbox{
+            position: absolute;
+            top: 10%;
+            left: 4%;
+            width: 92%;
+            height: 30%;
+            }
+        .link_font{
+            font-family: cursive;
+            color: white;
+            font-size: 50px;
+        }
+        button{
+            position: absolute;
+            top: 30%;
+            left: 30%;
+            width: 40%;
+            height: 20%;
+            font-size: 35px;
+            font-family: emoji;
+            color: black;
+            background-color: gold;
+        }
+        #shortbox{
+            position: fixed;
+            top: 60%;
+            left: 25%;
+            width: 50%;
+            padding: 5px,3px,5px,3px;
+            color: silver;
+            background-color: black;
+        }
+        .shortened{
+            font-size: 40px;
+            text-align: center;
+            font-weight: Bold;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <form method="post">
+        {% csrf_token %}
+        {% for field in form %}
+        <div id="linkbox">
+            <div class="link_font">Long-link: {{ field }}</div>
+        </div>
+        {% endfor %}
+        <button type="submit">Shorten The Url</button>
+        <div id="shortbox">
+            <div class="shortened">{{ link }}</div>
+        </div>
+    </form>
+    </div>
+</body>

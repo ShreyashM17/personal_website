@@ -1,0 +1,168 @@
+/*#FB8122 #E1E2E2*/
+body{
+    background-color: #1D2228;
+    color: #E1E2E2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.work_experience{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: #E1E2E2;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FB8122;
+}
+.MESA{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("MESA.JPG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+.journey{
+    position: relative;
+    opacity: 1;
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content:center;
+    text-align: center;
+}
+.journey h1{
+    position: relative;
+    top: 50%;
+    transition: 0.5s ease-in;
+}
+.activate{
+    position: absolute;
+    top: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in;
+    position: relative;
+    height: 70vh;
+    width: 80vw;
+    background-color: #2626267f;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 40%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: justify;
+}
+.work{
+    width: 40%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+    background-color: #262626;
+    width: 80vw;
+    height: 80vh;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover .journey h1{
+    top: 0%;
+}
+.box:hover .activate{
+    opacity: 1;
+    position: relative;
+    top: 0%;
+}
+.timeline{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border-left: 5px #FB8122 solid;
+}
+
+.MESA_w{
+    height: 70px;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 0%;
+    box-shadow: 20px 20px 50px #ffffff16 inset;
+}
+.MESA_w h3{
+    margin-bottom: 0%;
+}
+.MESA_w p{
+    margin-top: 0%;
+}
+
+.TATA_power{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("TATA_Power.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    opacity: 0.4;
+}
+.NSS{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-image: url("NSS image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+@media only screen and (max-width:700px){
+    .activate{
+        flex-direction: column-reverse;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        justify-content: flex-start;
+    }
+    .about{
+        width: 100%;
+    }
+    .work{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .timeline{
+        height: auto;
+    }
+    .hide{
+        overflow: hidden !important;
+        padding-bottom: 10px;
+    }
+}

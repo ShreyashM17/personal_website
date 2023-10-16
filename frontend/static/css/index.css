@@ -1,0 +1,134 @@
+/*#FB8122 #E1E2E2*/
+body{
+    background-color: #1D2228;
+    color: #E1E2E2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: #E1E2E2;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FB8122;
+}
+.content{
+    width: 40vw;
+    margin-right: 5vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.image-container{
+    margin-left: 5vw;
+    height: 80vh;
+    width: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagebox{
+    height: 60%;
+    width: 60%;
+    overflow: hidden;
+    border: solid 10px linear-gradient(#ff6f00,#FB8122);
+    border-radius: 50%;
+    animation: back 1s infinite;
+}
+@keyframes back{
+    0%{
+        border: solid 2.5px #fb8122;
+    }
+    20%{
+        border: solid 5px #fa7d1d;
+    }
+    40%{
+        border: solid 7.5px #fd7c19;
+    }
+    60%{
+        border: solid 10px #fc7914;
+    }
+    80%{
+        border: solid 7.5px #ff7810;
+    }
+    100%{
+        border: solid 5px #fd7208;
+    }
+}
+.imagebox img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-size: 50px;
+    background: linear-gradient(to right,#ffcda7,#FB8122);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+p{
+   font-size: 30px;
+   position: relative;
+   top: -60px;
+}
+.social{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+a:hover i{
+    color: #FB8122 !important;
+}
+#about{
+position: relative;
+top: 100%;
+left:0%;
+text-align: center;
+}
+#about p{
+    margin-top:100px;
+}
+@media only screen and (max-width:1100px) {
+    main{
+        flex-direction: column-reverse;
+    }
+    .image-container{
+        width: 70vw;
+        height: 70vw;
+    }
+    .content{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:600px){
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+        top: -40px;
+        text-align: center;
+
+    }
+}
